@@ -4,7 +4,7 @@ image:
   repository: microsoft/mssql-server-linux
   ## SQL Server image version
   ## Ref: https://hub.docker.com/r/microsoft/mssql-server-linux/tags/
-  tag: ctp2-1
+  tag: latest
   ## "IfNotPresent", "Always", or "Never"
   pullPolicy: IfNotPresent
 
