@@ -1,14 +1,14 @@
-apiVersion: servicecatalog.k8s.io/v1alpha1
-kind: Instance
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceInstance
 metadata:
-  name: my-redis
+  name: my-redis1
   namespace: testing
 spec:
-  serviceClassName: azure-rediscache
-  planName: basic
+  clusterServiceClassExternalName: azure-rediscache
+  clusterServicePlanExternalName: basic
   parameters:
     resourceGroup: SOUTHCENTRAL
-    cacheName: coreos-redis
+    cacheName: acs-k8-redis
     parameters:
       location: southcentralus
       enableNonSslPort: true

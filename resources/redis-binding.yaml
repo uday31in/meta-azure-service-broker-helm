@@ -1,9 +1,9 @@
-apiVersion: servicecatalog.k8s.io/v1alpha1
-kind: Binding
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceBinding
 metadata:
-  name: my-redis
+  name: my-redis1
   namespace: testing
 spec:
   instanceRef:
-    name: my-redis
+    name: my-redis1
   secretName: my-redis-creds
